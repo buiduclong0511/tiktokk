@@ -1,0 +1,111 @@
+.wrapper {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    top: 0;
+    height: var(--header-height);
+    border-bottom: 1px solid rgba(34,90,89,0.2);
+    z-index: 10;
+
+    .body {
+        height: var(--header-height);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logos {
+            cursor: pointer;
+        }
+
+        .logoTextDark {
+            height: 22px;
+            width: 97px;
+            margin-left: 4px;
+        }
+
+        .logoMusicNote {
+            width: 28px;
+            height: 30px;
+        }
+
+        .searchBox {
+            position: relative;
+            background-color: rgba(22,24,35,0.06);
+            font-size: 1.6rem;
+            width: 360px;
+            display: flex;
+            align-items: center;
+            border-radius: 92px;
+            border: 1px solid transparent;
+
+            &:focus-within {
+                border-color: #ccc;
+            }
+        }
+
+        .menuRight {
+            display: flex;
+            align-items: center;
+
+            .messageIcon {
+                font-size: 2rem;
+            }
+
+            .item {
+                margin-left: 16px;
+                cursor: pointer;
+                transition: 300ms;
+
+                &.actived {
+                    color: var(--primary-color);
+                }
+            }
+        }
+    }
+}
+
+.searchBox {
+    input {
+        flex: 1;
+        padding: 12px 16px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        caret-color: var(--primary-color);
+    }
+
+    .cleartBtn {
+        margin: 0 10px;
+        font-size: 13px;
+        color: #A7A7AB;
+
+        .spinner {
+            animation: rotate 1s linear infinite;
+        }
+    }
+
+    .line {
+        width: .5px;
+        height: 28px;
+        margin: -3px 0;
+        background: rgba(22,24,35,0.12);
+    }
+
+    button {
+        padding: 11px 16px 11px 12px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        cursor: pointer;
+        color: rgba(22, 24, 35, 0.34);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,11 @@
+.wrapper {
+    position: fixed;
+    top: var(--header-height);
+    height: 2px;
+    width: 100%;
+    z-index: 10;
+
+    .progress {
+        background-color: var(--primary-color);
+    }
+}

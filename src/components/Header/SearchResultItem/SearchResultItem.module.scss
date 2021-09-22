@@ -1,0 +1,33 @@
+$iconColor: #20D5EC;
+$hoverColor: #F8F8F8;
+
+.wrapper {
+    padding: 0.95rem 0.8rem;
+    cursor: pointer;
+
+    .title {
+        .body {
+            font-weight: bolder;
+        }
+
+        .tick {
+            display:             none;
+        }
+
+        &.ticked .tick {
+            display: inline;
+            font-size: 1.3rem;
+            margin-left: 0.7rem;
+            color: $iconColor;
+        }
+    }
+
+    .description {
+        color: rgba(0, 0, 0, .5);
+        font-size: 14px;
+    }
+
+    &:hover {
+        background-color: $hoverColor;
+    }
+}

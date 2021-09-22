@@ -1,0 +1,30 @@
+.wrapper {
+    width: 233px;
+    box-shadow: 0 -4px 32px rgba(0, 0, 0, .1);
+    background-color: #fff;
+
+    .item {
+        font-size: 1.6rem;
+        display: flex;
+        align-items: center;
+        padding: 0 16px;
+        height: 40px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba(22,24,35,0.03);
+        }
+
+        i {
+            margin-right: 12px;
+        }
+    }
+
+    hr {
+        margin: 8px 0;
+        height: 1px;
+        border: none;
+        background: rgba(22,24,35,0.12);
+        transform: scaleY(0.5);
+    }
+}

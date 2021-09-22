@@ -1,0 +1,148 @@
+.wrapper {
+    position: relative;
+
+    .user {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+
+        .nickname {
+            font-weight: bold;
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+            overflow: hidden;
+        }
+
+        .username {
+            font-size: 1.4rem;
+            color: #161823;
+        }
+
+        .name {
+            margin-left: 12px;
+            // display: flex;
+
+            &:hover {
+                .nickname {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .fromNow {
+            font-size: 1.3rem;
+            margin-left: 12px;
+        }
+    }
+
+    .btnFollow {
+        position: absolute;
+        top: 0;
+        right: 50px;
+    }
+}
+
+.liked {
+    color: var(--primary-color);
+}
+
+.wrapper {
+    .body {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: rgb(18, 18, 18);
+    }
+
+    .music {
+        font-weight: bold;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        margin-top: 10px;
+        padding-bottom: 16px;
+        cursor: pointer;
+        border-bottom: 1px solid rgba(18, 18, 18, 0.12);
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.wrapper {
+    .interactive {
+        padding: 16px 0;
+        display: flex;
+        align-items: center;
+
+        .interactiveItem {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        .shareGroup {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+.interactiveItem {
+    &.like {
+        cursor: pointer;
+    }
+
+    .iconWrapper {
+        width: 32px;
+        height: 32px;
+        background-color: #F1F1F2;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.6rem;
+        margin-right: 6px;
+    }
+}
+
+.shareGroup {
+    span {
+        color: rgba(22, 24, 35, 0.75);
+        font-weight: bold;
+        margin-right: 8px;
+        line-height: 2.4rem;
+        font-size: 1.6rem;
+    }
+
+    .icon {
+        margin-right: 8px;
+        cursor: pointer;
+    }
+}
+
+.copyLinkContainer {
+    border: 1px solid rgba(18, 18, 18, 0.12);
+    padding: 7px 16px 7px 12px;
+    display: flex;
+    margin-bottom: 18px;
+
+    .link {
+        flex: 1;
+        font-size: 1.4rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .copy {
+        font-size: 1.4rem;
+        color: var(--primary-color);
+        cursor: pointer;
+        
+        span {
+            text-transform: uppercase;
+            font-weight: bold;
+            padding-left: 9px;
+        }
+    }
+}

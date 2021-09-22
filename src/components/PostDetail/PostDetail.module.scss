@@ -1,0 +1,22 @@
+.wrapper {
+    margin-top: var(--header-height);
+
+    .firstPost {
+        position: relative;
+
+        .wayPoint {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 4px;
+            background-color: #f00;
+            display: none;
+        }
+    }
+}
+
+.recommendTitle {
+    font-size: 3.2rem;
+    font-weight: bold;
+}

@@ -1,0 +1,16 @@
+.PhoneInput {
+    flex: 1;
+    margin-right: 5px;
+    height: 32px;
+    border: 1px solid rgba(22, 24, 35, 0.12);
+
+    .PhoneInputCountry {
+        font-size: 2rem;
+        border-right: 1px solid rgba(22, 24, 35, 0.12);
+        padding: 0  5px;
+    }
+
+    .PhoneInputInput {
+        font-size: 1.6rem;
+    }
+}

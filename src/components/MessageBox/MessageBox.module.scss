@@ -1,0 +1,74 @@
+.wrapper {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .7);
+    
+    .main {
+        background-color: #fff;
+        width: 300px;
+        height: 200px;
+        border-radius: 8px;
+        position: relative;
+        
+        .heading {
+            font-size: 1.8rem;
+            padding: 15px 10px;
+            border-bottom: .5px solid #ccc;
+
+            .icon {
+                margin-right: 5px;
+            }
+
+            &.error {
+               color: #f00; 
+            }
+
+            &.warning {
+                color: #FFD43B;
+            }
+
+            &.success {
+                color: #0f0;
+            }
+        }
+
+        .message {
+            padding: 15px 10px;
+            font-size: 1.6rem;
+        }
+
+        .btnClose {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px 5px;
+            border-top: .5px solid #ccc;
+
+            button {
+                padding: 5px;
+                font-weight: bold;
+                color: #fff;
+                border-radius: 4px;
+
+                &.error {
+                    background-color: #f00;
+                }
+
+                &.warning {
+                    background-color: #FFD43B;
+                }
+
+                &.success {
+                    background-color: #0f0;
+                }
+            }
+        }
+    }
+}

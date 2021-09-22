@@ -1,0 +1,38 @@
+.wrapper {
+    background-color: #000;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    position: relative;
+
+    .heading {
+        color: #fff;
+        font-size: 1.4rem;
+        line-height: 2.8rem;
+        font-weight: bold;
+    }
+
+    ul {
+        list-style-type: none;
+        li {
+            a {
+                color: #ccc;
+                font-weight: bold;
+                font-size: 1.4rem;
+                line-height: 2.8rem;
+
+                &:hover {
+                    border-bottom: 1px solid #fff;
+                }
+            }
+        }
+    }
+
+    .copyright {
+        color: #8a8b91;
+        position: absolute;
+        bottom: 20px;
+        font-size: 1.4rem;
+        font-weight: bold;
+        right: 150px;
+    }
+}

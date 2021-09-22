@@ -1,0 +1,118 @@
+.wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 440px;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 2;
+    background-color: #fff;
+    box-shadow: rgb(0 0 0 / 12%) 0px 2px 12px;
+    transition: 300ms;
+}
+
+.wrapper {
+    .closeBtn {
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        right: 16px;
+        top: 16px;
+        background: rgba(22, 24, 35, 0.03);
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heading {
+        font-weight: 700;
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        margin-top: 56px;
+        margin-bottom: 16px;
+        color: rgb(22, 24, 35);
+        text-align: center;
+    }
+
+    .subHeading {
+        display: block;
+        font-weight: 700;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        color: rgb(22, 24, 35);
+        text-align: center;
+        padding: 0px 32px;
+    }
+
+    .qrCode {
+        margin-top: 16px;
+        position: relative;
+        height: 104px;
+
+        .qrCodeWrapper {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 104px;
+            height: 104px;
+        }
+
+        .qrCodeMain {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    .downloadText {
+        font-weight: 700;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        color: rgb(22, 24, 35);
+        text-align: center;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }
+
+    .downloadContainer {
+        padding: 0 32px;
+
+        .phoneInput {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .policy {
+            color: rgba(22, 24, 35, 0.5);
+            transform: none;
+            text-align: center;
+            width: 100%;
+            margin-top: 8px;
+            margin-bottom: 0px;
+            font-weight: 400;
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+
+            b {
+                color: #000;
+                cursor: pointer;
+            }
+        }
+
+        .downloadApp {
+            display: flex;
+            justify-content: space-around;
+            margin: 32px 0;
+
+            img {
+                width: 170px;
+                height: 50px;
+            }
+        }
+    }
+}

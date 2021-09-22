@@ -1,0 +1,32 @@
+# This file is a template, and might need editing before it works on your project.
+# Official framework image. Look for the different tagged releases at:
+# https://hub.docker.com/r/library/node/tags/
+image: node:10-alpine
+
+# This folder is cached between builds
+# http://docs.gitlab.com/ce/ci/yaml/README.html#cache
+cache:
+  paths:
+    - node_modules/
+
+# Name the stages involved in the pipeline
+stages:
+  - deploy
+
+variables:
+  PUBLIC_URL: '/tiktok'
+
+# the 'pages' job will deploy and build your site to the 'public' path
+pages:
+  stage: deploy
+  script:
+    - npm install --legacy-peer-deps # Install all dependencies
+    - npm run build # Build for prod
+    - mv public _public # CRA and gitlab pages both use the public folder. Only do this in a build pipeline.
+    - mv build public # Move build files to public dir for Gitlab Pages
+    - cp public/index.html public/404.html # Not necessary, but helps with https://medium.com/@pshrmn/demystifying-single-page-applications-3068d0555d46
+  artifacts:
+    paths:
+      - public # The built files for Gitlab Pages to serve
+  only:
+    - develop # Only run on master branch

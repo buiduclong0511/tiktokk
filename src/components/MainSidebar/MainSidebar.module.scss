@@ -1,0 +1,5 @@
+.wrapper {
+    padding-top: 2.6rem;
+    max-height: calc(100vh - var(--header-height));
+    overflow-y: scroll;
+}

@@ -1,0 +1,106 @@
+.wrapper {
+    height: calc(100vh - 32px - var(--header-height));
+    margin-top: 16px;
+    background-color: #fff;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, .06);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    .heading {
+        height: 80px;
+        padding: 16px 0px 16px 16px;
+        border-bottom: 0.5px solid rgba(22, 24, 35, 0.12);
+        display: flex;
+
+        .body {
+            margin-left: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .name {
+                font-weight: 600;
+                font-size: 1.8rem;
+                line-height: 2.4rem;
+            }
+
+            .nickname {
+                font-weight: 400;
+                font-size: 1.6rem;
+                line-height: 2.2rem;
+                color: rgba(22, 24, 35, 0.75);
+            }
+        }
+    }
+
+    .warning {
+        font-weight: 400;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 14px 16px;
+        background-color: rgba(22, 24, 35, 0.03);
+        font-size: 1.4rem;
+        line-height: 2rem;
+        color: rgba(22, 24, 35, 0.75);
+    }
+
+    .messageBox {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .typeMessage {
+        display: flex;
+        align-items: flex-end;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 13px 16px;
+        border-top: 0.5px solid rgba(22, 24, 35, 0.12);
+
+        .inputWrapper {
+            transition: 400ms;
+            flex: 1;
+            background: rgba(22,24,35,0.06);
+            border-radius: 8px;
+            position: relative;
+
+            input {
+                margin: 9px 0;
+                caret-color: var(--primary-color);
+                width: 100%;
+                padding: 0 45px 0 16px;
+            }
+
+            .emoji {
+                position: absolute;
+                right: 15px;
+                font-size: 2rem;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 24px;
+                height: 24px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        .sendBtn {
+            width: 32px;
+            height: 32px;
+            margin-left: 16px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

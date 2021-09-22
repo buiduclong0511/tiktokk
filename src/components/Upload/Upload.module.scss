@@ -1,0 +1,42 @@
+.wrapper {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    background-color: #fff;
+
+    &::-webkit-scrollbar {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 7px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        background-color: #ccc;
+        transition: .3s;
+        border-radius: 5px;
+    }
+}
+
+.wrapper {
+    .top {
+        margin-top: 60px;
+
+        .heading {
+            font-size: 5.6rem;
+            font-weight: 700;
+        }
+
+        .subHeading {
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 2.4rem;
+            color: rgb(138, 139, 145);
+            margin-top: 2px;
+        }
+    }
+}

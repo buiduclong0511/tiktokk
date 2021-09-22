@@ -1,0 +1,36 @@
+.wrapper {
+    width: 250px;
+    border-radius: 5px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 95%;
+    animation: slideIn ease-in .5s forwards, fadeOut ease-out 1s 2s forwards;
+
+    .message {
+        height: 100%;
+        font-size: 1.7rem;
+        line-height: 50px;
+        text-align: center;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100px);
+    }
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+    }
+}

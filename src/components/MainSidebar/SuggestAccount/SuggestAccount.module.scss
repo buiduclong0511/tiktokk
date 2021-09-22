@@ -1,0 +1,81 @@
+.wrapper {
+
+    .heading {
+        padding-top: 1.6rem;
+        padding-left: 0.4rem;
+        margin-bottom: 0.8rem;
+        font-size: 1.4rem;
+        color: rgba(22,24,35,0.75);
+    }
+
+    .listAccount {
+        overflow: hidden;
+    }
+
+    .viewAll {
+        height: 25px;
+        padding-left: 16px;
+        display: flex;
+        margin: 12px 0 9px;
+        color: var(--primary-color);
+        font-weight: bold;
+        font-size: 1.8rem;
+        cursor: pointer;
+
+        .icon {
+            margin-left: 4px;
+        }
+    }
+}
+
+.accountWrapper {
+    display: flex;
+    height: 64px;
+    align-items: center;
+    padding-left: 0.4rem;
+
+    &:hover {
+        background-color: #F8F8F8;
+    }
+
+    .avatar {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+    }
+
+    .body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 1.2rem;
+
+        .nickname {
+            display: flex;
+
+            .nicknameBody {
+                overflow: hidden;
+                max-width: 140px;
+                font-size: 1.6rem;
+                text-overflow: ellipsis;
+            }
+
+            .tick {
+                display: none;
+                margin-left: 0.4rem;
+                color: #20D5EC;
+            }
+        }
+
+        .name {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: 1.3rem;
+            color: rgb(22, 24, 35);
+        }
+    }
+    
+    &.ticked .body .tick {
+        display: block;
+    }
+}

@@ -1,0 +1,25 @@
+.wrapper {
+    margin-top: 20px;
+}
+
+.heading {
+    display: flex;
+
+    .headingItem {
+        flex: 1;
+        color: rgba(18,18,18,0.5);
+        font-size: 1.8rem;
+        font-weight: bold;
+        line-height: 2.5rem;
+        text-align: center;
+        cursor: pointer;
+
+        &.active {
+            color: #121212;
+        }
+    }
+}
+
+.main {
+    min-height: 50vh;
+}

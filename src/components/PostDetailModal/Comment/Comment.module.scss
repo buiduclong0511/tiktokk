@@ -1,0 +1,92 @@
+.wrapperUnLogin {
+    flex: 1;
+    border-top: 1px solid rgba(18, 18, 18, 0.12);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .heading {
+        font-size: 2.4rem;
+        line-height: 2.8rem;
+        margin-bottom: 8px;
+    }
+
+    .subHeading {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        color: rgba(22, 24, 35, 0.75);
+        margin-bottom: 20px;
+    }
+
+    .signUp {
+        margin-top: 20px;
+        color: rgb(22, 24, 35);
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+
+        span {
+            cursor: pointer;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+    }
+
+}
+
+.wrapperLogin {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    .listComments {
+        height: 333px;
+        overflow-y: scroll;
+        appearance: none;
+        
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #ccc;
+            border-radius: 5px;
+        }
+    }
+
+    .typeComment {
+        display: flex;
+        padding: 21px 0;
+        margin: 0 32px;
+
+        .sendWrapper {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            background-color: rgba(22, 24, 35, 0.06);
+            border-radius: 8px;
+
+            input {
+                flex: 1;
+                background-color: transparent;
+                padding: 0 15px;
+            }
+
+            .tag,
+            .emoji {
+                display: inline-block;
+                width: 32px;
+                height: 32px;
+                text-align: center;
+                line-height: 32px;
+                font-size: 1.8rem;
+                cursor: pointer;
+            }
+        }
+
+        .btnSend {
+            background-color: transparent;
+            padding: 0 10px;
+            cursor: pointer;
+        }
+    }
+}

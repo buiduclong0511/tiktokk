@@ -1,0 +1,21 @@
+.wrapper {
+    background-color: #fff;
+    position: absolute;
+    top: calc(100% + 9px);
+    left: 0;
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 3px 18px -3px rgba(0 , 0, 0, .3);
+    overflow: hidden;
+
+    .showAllResult {
+        padding: 1rem 2rem;
+        cursor: pointer;
+        font-size: 1.5rem;
+        display: block;
+
+        &:hover {
+            background-color: #F8F8F8;
+        }
+    }
+}

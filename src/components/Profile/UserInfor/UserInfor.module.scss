@@ -1,0 +1,71 @@
+.wrapper {
+
+    .body {
+        position: relative;
+        display: flex;
+    }
+
+    .interactive {
+        margin-top: 22px;
+        display: flex;
+    }
+
+    .bio {
+        margin-top: 10px;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        color: rgb(18, 18, 18);
+        white-space: pre-line;
+    }
+}
+
+.body {
+    .avatar {
+        width: 116px;
+        height: 116px;
+        border-radius: 50%;
+    }
+
+    .infor {
+        margin-left: 20px;
+
+        .nickname {
+            font-size: 3.2rem;
+            line-height: 3.8rem;
+        }
+
+        .name {
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+            margin-top: 4px;
+        }
+
+        .btnFollow {
+            margin-top: 16px;
+            display: block;
+        }
+    }
+
+    .btnMore {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+.interactive {
+    .interactiveItem {
+        margin-right: 20px;
+        color: rgba(18,18,18,0.75);
+
+        .number {
+            font-size: 1.8rem;
+        }
+
+        span {
+            font-size: 1.6rem;
+            margin-left: 6px;
+        }
+    }
+}

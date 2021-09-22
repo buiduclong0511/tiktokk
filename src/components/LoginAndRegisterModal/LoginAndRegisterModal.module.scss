@@ -1,0 +1,111 @@
+.wrapper {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    .overlay {
+        background-color: rgba(0, 0, 0, .5);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .form {
+            background-color: #fff;
+            height: 98vh;
+            padding: 60px 48px 0px;
+            position: relative;
+            border-radius: 10px;
+        }
+    }
+}
+
+.form {
+    .btnClose {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-color: rgba(22, 24, 35, 0.05);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .heading {
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        text-align: center;
+    }
+
+    .formGroup {
+        .title {
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+            color: #161823;
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .input {
+            margin-bottom: 16px;
+            height: 44px;
+            width: 376px;
+            padding-left: 12px;
+            caret-color: var(--primary-color);
+            color: #161823;
+            font-size: 1.6rem;
+            background-color: rgba(22,24,35,.06);
+            border: 1.5px solid rgba(22,24,35,.06);
+            border-radius: 4px;
+
+            &:focus {
+                background: rgba(22,24,35,.1);
+                border: 1.5px solid rgba(22,24,35,.1);
+            }
+        }
+    }
+
+    .forgetPassword {
+        color: rgba(22,24,35,.75);
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 32px;
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        height: 64px;
+        padding: 0 24px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        left: 0;
+        font-weight: bold;
+        border-top: .5px solid rgba(22,24,35,.12);
+
+        span {
+            font-size: 1.5rem;
+            line-height: 1.8rem;
+        }
+
+        .switchToRegister {
+            color: var(--primary-color);
+            font-weight: inherit;
+            margin-left: 5px;
+        }
+    }
+}
