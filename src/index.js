@@ -11,7 +11,7 @@ import store from '~/store'
 import 'overlayscrollbars/css/OverlayScrollbars.css';
 
 //global config baseURL
-axios.defaults.baseURL = 'https://tiktok.f8team.dev';
+axios.defaults.baseURL = 'https://tiktok.fullstack.edu.vn/';
 axios.interceptors.response.use(function (response) {
   // Any status code that lie within the range of 2xx cause this function to trigger
   // Do something with response data

@@ -30,7 +30,7 @@ function Home({ type = 'for-you', except = null, postDetail }) {
 
     useEffect(() => {
         setIsLoading(true)
-        axios.get(`/api/posts?type=${type}&page=${currenPage}${except ? '&except=' + except : ''}`)
+        axios.get(`/api/videos?type=${type}&page=${currenPage}${except ? '&except=' + except : ''}`)
             .then(res => {
                 const newPosts = [...posts, ...Post.createFromList(res.data)]
                 setPosts(newPosts)
